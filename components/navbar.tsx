@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
+import { CVPopover } from "./cv-popover";
 
 const routes = [
   {
@@ -15,15 +17,11 @@ const routes = [
   },
   {
     label: "Contact",
-    href: "/contact",
+    href: "mailto:contact@eroskarm.com",
   },
   {
     label: "Linkedin",
-    href: "/Linkedin",
-  },
-  {
-    label: "CV",
-    href: "/cv",
+    href: "https://ee.linkedin.com/in/eros-karm-426196234?trk=people-guest_people_search-card",
   },
 ];
 
@@ -37,18 +35,9 @@ export const Navbar = () => {
         role="button"
         onClick={() => router.push("/")}
       >
-        <Image
-          src="./logo.svg"
-          width="40"
-          height="40"
-          alt="EK, navigation logo"
-        />
-        <div className="flex flex-col gap-y-0 justify-center">
-          <span className="font-normal text-[13px]">Eros Karm</span>
-          <span className="text-muted-foreground uppercase text-[8px] tracking-wide -mt-1">
-            Web Engineer
-          </span>
-        </div>
+        <span className="text-xl font-semibold text-stone-700 tracking-wide">
+          eroskarm.com
+        </span>
       </div>
 
       <div className="flex gap-x-12">
@@ -61,6 +50,7 @@ export const Navbar = () => {
             {route.label}
           </Link>
         ))}
+        <CVPopover />
       </div>
     </div>
   );

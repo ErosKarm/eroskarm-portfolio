@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { cn } from "@/lib/utils";
+import { Footer } from "@/components/footer";
 
 const Helvetica = localFont({
   src: [
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body className={cn("bg-[#F0EFEC]", Helvetica.className)}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
