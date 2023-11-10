@@ -10,11 +10,15 @@ import { Brands } from "../../_components/brands";
 
 const AboutPage = () => {
   return (
-    <div>
+    <>
       <section>
-        <Container className="mt-[250px]">
-          <h2 className="text-5xl font-semibold">Discover</h2>
-          <h1 className="text-8xl font-semibold">More about me.</h1>
+        <Container className="mt-[150px] lg:mt-[250px] xl:px-0 px-12">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl  font-semibold">
+            Discover
+          </h2>
+          <h1 className="text-4xl sm:text-7xl lg:text-8xl  font-semibold">
+            More about me.
+          </h1>
         </Container>
       </section>
 
@@ -33,9 +37,9 @@ const AboutPage = () => {
       </section>
 
       <section>
-        <Container className="mt-48 w-[850px]">
+        <Container className="lg:mt-48 max-w-[850px] lg:px-0 px-12 ">
           <div className="flex flex-col items-center">
-            <h2 className="text-4xl font-bold mt-5 text-center">
+            <h2 className="text-2xl lg:text-4xl font-bold mt-5 text-center">
               I&apos;m Eros Karm, a Web Developer with a Passion for Crafting
               User-Centric Experiences and Building Responsive Websites that
               Engage and Delight Audiences.
@@ -99,17 +103,12 @@ const AboutPage = () => {
       </section>
 
       <section className="">
-        <Container className="w-[850px]">
+        <Container className="max-w-[850px] px-12 lg:px-0">
           <Separator className="mt-16 mb-4" />
           <div className="grid grid-cols-4 gap-y-7">
             <div className="flex flex-col">
               <span className="text-xs font-semibold mb-1">Languages</span>
-              <p className="text-sm">
-                Estonian, English,{" "}
-                <span className="text-[10px] text-muted-foreground">
-                  Russian(?)
-                </span>
-              </p>
+              <p className="text-sm">Estonian, English</p>
             </div>
 
             <div className="flex flex-col">
@@ -156,7 +155,7 @@ const AboutPage = () => {
       </section>
 
       <section className="mt-8">
-        <Container className="w-[850px]">
+        <Container className="max-w-[850px] lg:px-0 px-12">
           <Separator className="mt-0 mb-4" />
 
           <div className="grid grid-cols-5">
@@ -201,7 +200,7 @@ const AboutPage = () => {
       </section>
 
       <section>
-        <Container className="w-[1100px]">
+        <Container className="max-w-[1100px] h-full">
           <Separator className="mt-10 mb-4" />
           <h3 className="text-xl font-bold text-center mt-10">
             Some of the brands I&apos;ve worked with
@@ -212,20 +211,20 @@ const AboutPage = () => {
       </section>
 
       <section>
-        <Container className="w-[850px] h-[400px] flex items-center justify-center flex-col ">
+        <Container className="max-w-[850px] h-[400px] flex items-center justify-center flex-col ">
           <span className="text-center text-muted-foreground tracking-widest text-sm">
             LOKING FOR A DEVELOPER?
           </span>
           <Link
             href={"/contact"}
-            className="flex justify-center align-center items-center text-7xl font-semibold hover:underline"
+            className="flex justify-center align-center items-center text-4xl sm:text-5xl lg:text-7xl font-semibold hover:underline"
           >
             Let&apos;s work together{" "}
             <MoveRight className="h-12 w-12 ml-4 mt-2" />
           </Link>
         </Container>
       </section>
-    </div>
+    </>
   );
 };
 

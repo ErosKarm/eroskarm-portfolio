@@ -1,34 +1,16 @@
-"use client";
-
 import { Container } from "@/components/container";
 
 import Link from "next/link";
-import { useEffect } from "react";
+
 import { Projects } from "../_components/projects";
 
 import { Technologies } from "../_components/technologies";
 
 export default function Home() {
-  useEffect(() => {
-    const initializeVideoText = () => {
-      const videoTextElement = document.querySelector(".video-text");
-
-      if (videoTextElement) {
-        videoTextElement.innerHTML = `
-          <video autoplay muted loop playsinline>
-            <source src="/your-video.mp4" type="video/mp4" />
-          </video>
-          Case studies.`;
-      }
-    };
-
-    initializeVideoText();
-  }, []);
-
   return (
     <>
       <section>
-        <Container className="h-full mt-[150px] relative z-20">
+        <Container className="h-full mt-[150px] relative z-20 px-12 xl:px-0">
           <div className="z-90">
             <h1 className="font-semibold text-4xl">Web Engineer</h1>
             <p className="mt-8 w-[75%] text-xl">
@@ -49,14 +31,16 @@ export default function Home() {
           </div>
 
           <div className="relative  mt-[70px]">
-            <h1 className="text-[180px] font-bold">Case studies.</h1>
+            <h1 className="text-[60px] font-bold sm:text-[70px] md:text-[80px]  lg:text-[100px]  xl:text-[180px]">
+              Case studies.
+            </h1>
           </div>
 
           <Projects />
         </Container>
       </section>
 
-      <section className="h-[250px] w-full mt-28 mb-24">
+      <section className=" w-full mt-28 mb-24">
         <Container>
           <Technologies />
         </Container>

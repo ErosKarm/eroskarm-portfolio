@@ -3,13 +3,20 @@
 import Image from "next/image";
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
 import { useRouter } from "next/navigation";
+import { cn } from "@/lib/utils";
 
-export const CVPopover = () => {
+interface CVPopoverProps {
+  className?: string;
+}
+
+export const CVPopover = ({ className }: CVPopoverProps) => {
   const router = useRouter();
 
   return (
     <Popover>
-      <PopoverTrigger className="text-xs uppercase font-[600] text-black/8">
+      <PopoverTrigger
+        className={cn("text-xs uppercase font-[600] text-black/8", className)}
+      >
         CV
       </PopoverTrigger>
       <PopoverContent className="grid grid-cols-2 w-[80px] text-xs px-1 py-1">

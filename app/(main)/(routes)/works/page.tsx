@@ -11,7 +11,7 @@ const WorksPage = () => {
   return (
     <>
       <section className="h-fit">
-        <Container className="h-fit mt-[150px] relative z-20">
+        <Container className="h-fit mt-[150px] relative z-20 px-12 xl:px-0">
           <h1 className="font-semibold text-4xl">Selected works</h1>
 
           <div

@@ -7,9 +7,9 @@ interface TechnologiesProps {
 
 export const Technologies = ({ className }: TechnologiesProps) => {
   return (
-    <div className={cn("", className)}>
+    <div className={cn("px-12 xl:px-0", className)}>
       <h1 className="text-2xl font-bold">Technologies</h1>
-      <div className="grid grid-cols-4 mt-8 gap-y-10">
+      <div className="grid grid-cols-2 lg:grid-cols-4 mt-8 gap-y-10">
         <div className="relative flex items-center justify-center">
           <Image
             src={"/logos/nextjs.png"}

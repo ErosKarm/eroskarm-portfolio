@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Brands = () => {
   return (
-    <div className="grid grid-cols-5 h-[300px] items-center justify-center align-center">
+    <div className="grid grid-cols-3 lg:grid-cols-5 h-[500px] lg:h-[300px]  items-center justify-center align-center">
       <Image
         src={"/brands/aitaneestit.png"}
         alt="Aitan Eestit Logo"
