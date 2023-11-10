@@ -12,7 +12,10 @@ export const Footer = () => {
               eroskarm.com
             </Link>
           </div>
-          <Link href={"/privacy"} className="text-sm text-muted-foreground">
+          <Link
+            href={"/privacy-policy"}
+            className="text-sm text-muted-foreground"
+          >
             Privacy Policy
           </Link>
         </div>

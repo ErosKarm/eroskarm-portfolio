@@ -2,6 +2,7 @@
 
 import { Container } from "@/components/container";
 import Image from "next/image";
+import Link from "next/link";
 
 import { useRouter } from "next/navigation";
 
@@ -11,14 +12,10 @@ const WorksPage = () => {
   return (
     <>
       <section className="h-fit">
-        <Container className="h-fit mt-[150px] relative z-20 px-12 xl:px-0">
+        <Container className="h-fit mt-[150px] relative z-20 px-12 xl:px-0 flex flex-col">
           <h1 className="font-semibold text-4xl">Selected works</h1>
 
-          <div
-            className="h-[570px] w-full mt-12"
-            role="button"
-            onClick={() => router.push("/works/oodhotels")}
-          >
+          <Link href={"/works/oodhotels"} className="h-[570px] w-full mt-12">
             <div className="relative h-[500px] w-full">
               <Image
                 src={"/oodhotels.jpg"}
@@ -31,11 +28,11 @@ const WorksPage = () => {
             <span className="uppercase text-xs font-semibold text-black/70">
               CONCEPT DEVELOPMENT
             </span>
-          </div>
+          </Link>
 
-          <div
-            className="h-[570px] w-full mt-12 "
-            onClick={() => router.push("/works/veskitehnopark")}
+          <Link
+            href={"/works/veskitehnopark"}
+            className="h-[570px] w-full mt-12"
           >
             <div className="relative h-[500px] w-full">
               <Image
@@ -51,7 +48,7 @@ const WorksPage = () => {
             <span className="uppercase text-xs font-semibold text-black/70">
               CONCEPT DEVELOPMENT
             </span>
-          </div>
+          </Link>
         </Container>
       </section>
     </>
