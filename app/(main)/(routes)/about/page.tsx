@@ -105,7 +105,7 @@ const AboutPage = () => {
       <section className="">
         <Container className="max-w-[850px] px-12 lg:px-0">
           <Separator className="mt-16 mb-4" />
-          <div className="grid grid-cols-4 gap-y-7">
+          <div className="grid grid-cols-4  gap-y-7">
             <div className="flex flex-col">
               <span className="text-xs font-semibold mb-1">Languages</span>
               <p className="text-sm">Estonian, English</p>
@@ -131,7 +131,7 @@ const AboutPage = () => {
             </div>
             <div className="flex flex-col col-span-4">
               <span className="text-xs font-semibold mb-1">Skills</span>
-              <div className="flex gap-x-2">
+              <div className="flex flex-wrap gap-2">
                 <Button className="text-xs border" variant="ghost" size="sm">
                   UI & UX
                 </Button>
@@ -159,41 +159,75 @@ const AboutPage = () => {
           <Separator className="mt-0 mb-4" />
 
           <div className="grid grid-cols-5">
-            <div>
+            <div className="col-span-5 sm:col-span-1">
               <span className="text-xs font-semibold">2021 - present</span>
             </div>
-            <div className="col-span-4 ">
+            <div className="col-span-5 sm:col-span-4">
               <span className="text-sm font-bold">SYSTION OÜ</span>
               <br className="m-0 p-0" />
               <span className="text-xs text-muted-foreground">
                 Wordpress Developer
               </span>
-              <p className="text-sm mt-3">
-                Over the past 9 years I have been working with big companies and
-                rising startups around the world as a designer and art director,
-                working solo and leading small design teams. In my spare time I
-                enjoy photography and motorcycle adventures.
-              </p>
+              <ul className="list-disc text-sm mt-3 flex flex-col gap-2">
+                <li>
+                  Created and designed WordPress websites from scratch, turning
+                  clients&apos; visions into functional online platforms.
+                </li>
+                <li>
+                  Acted as the primary point of contact between project managers
+                  and clients to facilitate seamless communication and ensure
+                  project alignment with client expectations
+                </li>
+                <li>
+                  Successfully identified and resolved a wide range of technical
+                  challenges, finding innovative solutions to meet project
+                  requirements.
+                </li>
+                <li>
+                  Ensured website security and optimized page loading speeds,
+                  providing users with a safe and efficient browsing experience.
+                </li>
+                <li>
+                  Utilized web development skills to set up websites and ensure
+                  their aesthetic appeal and functionality met high standards.
+                </li>
+              </ul>
             </div>
           </div>
           <div className="grid grid-cols-5 mt-10">
-            <div>
+            <div className="col-span-5 sm:col-span-1">
               <span className="text-xs font-semibold">
                 Feb. 2020 - Mar. 2020
               </span>
             </div>
-            <div className="col-span-4 ">
+            <div className="col-span-5 sm:col-span-4">
               <span className="text-sm font-bold">ITSON OÜ</span>
               <br className="m-0 p-0" />
               <span className="text-xs text-muted-foreground">
-                Computer Hardware & Networking Internship
+                Computer Hardware & Networking
               </span>
-              <p className="text-sm mt-3">
-                Over the past 9 years I have been working with big companies and
-                rising startups around the world as a designer and art director,
-                working solo and leading small design teams. In my spare time I
-                enjoy photography and motorcycle adventures.
-              </p>
+              <ul className="list-disc text-sm mt-3 flex flex-col gap-2">
+                <li>
+                  Applied expertise in hardware to perform specific job tasks,
+                  including assembling computer hardware and ensuring device
+                  compatibility.
+                </li>
+                <li>
+                  Conducted diagnostics and maintenance for computers and
+                  peripherals, including hardware replacement and driver
+                  identification.
+                </li>
+                <li>
+                  Handled cost calculations and prepared invoices for clients
+                  regarding materials and services
+                </li>
+                <li>
+                  Kept client software up to date based on their requirements,
+                  using industry best practices and offering innovative
+                  solutions as needed
+                </li>
+                <li>Provided user support, including remote assistance.</li>
+              </ul>
             </div>
           </div>
         </Container>
@@ -211,13 +245,13 @@ const AboutPage = () => {
       </section>
 
       <section>
-        <Container className="max-w-[850px] h-[400px] flex items-center justify-center flex-col ">
-          <span className="text-center text-muted-foreground tracking-widest text-sm">
+        <Container className="max-w-[850px] mt-24 sm:mt-0 h-[400px] flex items-center justify-center flex-col ">
+          <span className="text-center text-muted-foreground tracking-widest text-xs sm:text-sm">
             LOKING FOR A DEVELOPER?
           </span>
           <Link
             href={"/contact"}
-            className="flex justify-center align-center items-center text-4xl sm:text-5xl lg:text-7xl font-semibold hover:underline"
+            className="flex justify-center align-center items-center text-3xl sm:text-5xl lg:text-7xl font-semibold hover:underline"
           >
             Let&apos;s work together{" "}
             <MoveRight className="h-12 w-12 ml-4 mt-2" />

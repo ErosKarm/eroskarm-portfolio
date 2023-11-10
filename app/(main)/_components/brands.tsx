@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Brands = () => {
   return (
-    <div className="grid grid-cols-3 lg:grid-cols-5 h-[500px] lg:h-[300px]  items-center justify-center align-center">
+    <div className="grid grid-cols-2 gap-10 mt-10 sm:grid-cols-3 lg:grid-cols-5 h-[500px] lg:h-[300px]  items-center justify-center align-center">
       <Image
         src={"/brands/aitaneestit.png"}
         alt="Aitan Eestit Logo"
@@ -106,7 +106,7 @@ export const Brands = () => {
         alt="Eesti Fotograafid Logo"
         width={80}
         height={80}
-        className="mx-auto grayscale brightness-0"
+        className="mx-auto grayscale brightness-0 hidden sm:block"
       />
     </div>
   );
