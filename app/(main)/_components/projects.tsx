@@ -12,7 +12,9 @@ export const Projects = () => {
           height={600}
           className="rounded-lg w-full"
         />
-        <h3 className="text-xl mt-2 font-semibold">ÖÖD Hotels, Estonia</h3>
+        <h3 className="text-sm sm:text-xl mt-2 font-semibold">
+          ÖÖD Hotels, Estonia
+        </h3>
       </Link>
       <Link href={"/works/veskitehnopark"} className="mt-10 lg:mt-48">
         <Image
@@ -22,7 +24,9 @@ export const Projects = () => {
           height={900}
           className="rounded-lg pt-[-5px] w-full"
         />
-        <h3 className="text-xl mt-2 font-semibold">Veskitehnopark</h3>
+        <h3 className="text-sm sm:text-xl mt-2 font-semibold">
+          Veskitehnopark
+        </h3>
       </Link>
       <div className="flex  flex-col mt-10 lg:-mt-8 lg:grid gap-x-24 grid-cols-2 col-span-2">
         <div className="">
@@ -33,12 +37,12 @@ export const Projects = () => {
             height={900}
             className="rounded-lg pt-[-5px] w-full"
           />
-          <h3 className="text-xl mt-2 font-semibold">F1 Dash</h3>
+          <h3 className="text-sm sm:text-xl mt-2 font-semibold">F1 Dash</h3>
         </div>
         <div className="mt-10 lg:mt-0 flex items-center justify-center ">
           <Link
             href={"/works"}
-            className="text-3xl lg:text-5xl font-semibold hover:underline transition-all"
+            className="text-2xl sm:text-3xl lg:text-5xl font-semibold hover:underline transition-all"
           >
             See other works.
           </Link>

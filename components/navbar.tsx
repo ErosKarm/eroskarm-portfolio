@@ -51,7 +51,7 @@ export const Navbar = () => {
           role="button"
           onClick={() => router.push("/")}
         >
-          <span className="text-xl font-semibold text-stone-700 tracking-wide">
+          <span className="text-md sm:text-xl font-semibold text-stone-700 tracking-wide">
             eroskarm.com
           </span>
         </div>

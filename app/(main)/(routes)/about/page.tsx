@@ -12,7 +12,7 @@ const AboutPage = () => {
   return (
     <>
       <section>
-        <Container className="mt-[150px] lg:mt-[250px] xl:px-0 px-12">
+        <Container className="mt-[100px] sm:mt-[150px] lg:mt-[250px] xl:px-0 px-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl  font-semibold">
             Discover
           </h2>
@@ -23,7 +23,7 @@ const AboutPage = () => {
       </section>
 
       <section>
-        <div className="w-full h-[400px] mt-10 overflow-hidden">
+        <div className="w-full h-auto max-h-[400px] mt-10 overflow-hidden">
           <video
             autoPlay
             loop
@@ -37,9 +37,9 @@ const AboutPage = () => {
       </section>
 
       <section>
-        <Container className="lg:mt-48 max-w-[850px] lg:px-0 px-12 ">
+        <Container className="mt-12 lg:mt-48 max-w-[850px] lg:px-0 px-12 ">
           <div className="flex flex-col items-center">
-            <h2 className="text-2xl lg:text-4xl font-bold mt-5 text-center">
+            <h2 className="text-md sm:text-2xl lg:text-4xl font-bold mt-5 text-center">
               I&apos;m Eros Karm, a Web Developer with a Passion for Crafting
               User-Centric Experiences and Building Responsive Websites that
               Engage and Delight Audiences.
@@ -50,7 +50,7 @@ const AboutPage = () => {
               alt="Eros Karm"
               width={160}
               height={160}
-              className="rounded-full flex  mt-16 grayscale"
+              className="rounded-full flex mt-10 sm:mt-16 grayscale"
             />
 
             <div className="flex items-center justify-end gap-x-4 mt-20 w-full">
@@ -245,13 +245,13 @@ const AboutPage = () => {
       </section>
 
       <section>
-        <Container className="max-w-[850px] mt-24 sm:mt-0 h-[400px] flex items-center justify-center flex-col ">
+        <Container className="max-w-[850px] mt-12 sm:mt-0 h-[200px] sm:h-[400px] flex items-center justify-center flex-col ">
           <span className="text-center text-muted-foreground tracking-widest text-xs sm:text-sm">
             LOKING FOR A DEVELOPER?
           </span>
           <Link
             href={"/contact"}
-            className="flex justify-center align-center items-center text-3xl sm:text-5xl lg:text-7xl font-semibold hover:underline"
+            className="flex justify-center align-center items-center text-2xl sm:text-5xl lg:text-7xl font-semibold hover:underline"
           >
             Let&apos;s work together{" "}
             <MoveRight className="h-12 w-12 ml-4 mt-2" />

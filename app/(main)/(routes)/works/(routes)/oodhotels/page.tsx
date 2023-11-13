@@ -87,50 +87,43 @@ const OodhotelsPage = () => {
               technology to offer a glimpse into the future of accommodations.
               Explore ÖÖD-Hotels and discover a new era in hospitality.
             </p>
-            {/* <p className="text-stone-500 text-xl mb-6">
-              The final deliverable was a family of 4 products that you can
-              download and use for free. Just download InVision Studio, open
-              their App Store and search for 128 Outline Icons, eCommerce
-              Wireframe Kit, User Interface Kit and Web Wireframe Kit.
-            </p> */}
           </div>
         </Container>
       </section>
 
-      <section className="w-full mt-24">
-        <Container className="max-w-[1500px] w-[1500px] pt-24 pb-12 mb-12 bg-stone-200 rounded-md">
-          <div className="w-full h-[700px] relative">
-            <Image
-              src="/oodhotels/ood-1.png"
-              alt="ÖÖD Website"
-              fill
-              className="object-contain rounded-xl"
-            />
-          </div>
-          <div className="w-full h-[700px] relative mt-24">
-            <Image
-              src="/oodhotels/ood-2.png"
-              alt="ÖÖD Website"
-              fill
-              className="object-contain rounded-xl"
-            />
-          </div>
-          <div className="w-full h-[700px] relative mt-24">
-            <Image
-              src="/oodhotels/ood-3.png"
-              alt="ÖÖD Website"
-              fill
-              className="object-contain rounded-xl"
-            />
-          </div>
-          <div className="w-full h-[700px] relative mt-24">
-            <Image
-              src="/oodhotels/ood-4.png"
-              alt="ÖÖD Website"
-              fill
-              className="object-contain rounded-xl"
-            />
-          </div>
+      <section className="mt-24">
+        <Container className="max-w-[1400px] px-12 xl:px-0   flex gap-y-24 flex-col  pt-24 pb-12 mb-12 bg-transparent xl:bg-stone-200  rounded-md  ">
+          <Image
+            src="/oodhotels/ood-1.png"
+            alt="ÖÖD Website"
+            width={1400}
+            height={700}
+            className=" rounded-xl px-20"
+          />
+
+          <Image
+            src="/oodhotels/ood-2.png"
+            alt="ÖÖD Website"
+            width={1400}
+            height={700}
+            className=" rounded-xl px-20"
+          />
+
+          <Image
+            src="/oodhotels/ood-3.png"
+            alt="ÖÖD Website"
+            width={1400}
+            height={700}
+            className=" rounded-xl px-20"
+          />
+
+          <Image
+            src="/oodhotels/ood-4.png"
+            alt="ÖÖD Website"
+            width={1400}
+            height={700}
+            className=" rounded-xl px-20"
+          />
         </Container>
       </section>
     </>
