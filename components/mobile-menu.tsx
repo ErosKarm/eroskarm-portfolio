@@ -1,10 +1,9 @@
 "use client";
 
-import { Menu } from "lucide-react";
+import { Github, Linkedin, MailPlus, Menu } from "lucide-react";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -59,8 +58,24 @@ export const MobileMenu = ({ routes }: MobileMenuProps) => {
           ))}
           <CVPopover className="text-md" />
         </div>
+
         <div className="h-full flex flex-col justify-end">
-          <span className="text-xs">Copyright © 2023 eroskarm.com</span>
+          <div className="mb-4 flex gap-x-4">
+            <Link href={"https://www.linkedin.com/in/eros-karm/"}>
+              <Linkedin className="w-4 h-4" />
+            </Link>
+
+            <Link href={"https://github.com/ErosKarm"}>
+              <Github className="w-4 h-4" />
+            </Link>
+            <Link href={"mailto:contact@eroskarm.com"}>
+              <MailPlus className="w-4 h-4" />
+            </Link>
+          </div>
+
+          <span className="text-xs text-muted-foreground">
+            Copyright © 2023 eroskarm.com
+          </span>
         </div>
       </SheetContent>
     </Sheet>

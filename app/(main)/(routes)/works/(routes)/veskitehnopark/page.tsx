@@ -1,21 +1,20 @@
 import { Container } from "@/components/container";
 import Image from "next/image";
-import Link from "next/link";
 
 const OodhotelsPage = () => {
   return (
     <>
-      <section className=" w-full ">
-        <Container className="grid grid-cols-2 mt-[150px] ">
+      <section className="w-full">
+        <Container className="grid grid-cols-1 mx-8 sm:mx-auto sm:grid-cols-2 mt-[80px] sm:mt-[150px]">
           <div>
             <span className="text-muted-foreground tracking-widest">
               CASE STUDY
             </span>
-            <h1 className="text-5xl font-bold mt-7 w-[80%] mb-12">
+            <h1 className="text-3xl sm:text-5xl font-bold mt-7 w-[80%] mb-8 sm:mb-12">
               Veskitehnopark — Modern way of storage space
             </h1>
 
-            <div className="mb-6">
+            <div className="mb-3 sm:mb-6">
               <span className="text-muted-foreground tracking-widest text-sm">
                 SERVICES
               </span>
@@ -24,21 +23,21 @@ const OodhotelsPage = () => {
               </h1>
             </div>
 
-            <div className="mb-6">
+            <div className="mb-3 sm:mb-6">
               <span className="text-muted-foreground tracking-widest text-sm">
                 Development
               </span>
               <h1 className="text-md font-bold mt-2 w-[80%]">Concept</h1>
             </div>
 
-            <div className="mb-6">
+            <div className="mb-3 sm:mb-6">
               <span className="text-muted-foreground tracking-widest text-sm">
                 Year
               </span>
               <h1 className="text-md font-bold mt-2 w-[80%]">2023</h1>
             </div>
 
-            <div className="mb-6 flex flex-col">
+            <div className=" flex flex-col">
               <span className="text-muted-foreground tracking-widest text-sm">
                 Link
               </span>
@@ -86,41 +85,33 @@ const OodhotelsPage = () => {
               library, creating an engaging and visually appealing user
               interface.
             </p>
-            {/* <p className="text-stone-500 text-xl mb-6">
-              The final deliverable was a family of 4 products that you can
-              download and use for free. Just download InVision Studio, open
-              their App Store and search for 128 Outline Icons, eCommerce
-              Wireframe Kit, User Interface Kit and Web Wireframe Kit.
-            </p> */}
           </div>
         </Container>
       </section>
 
-      <section className="w-full mt-24">
-        <Container className="max-w-[1500px] w-[1500px] pt-24 pb-12 mb-12 bg-stone-200 rounded-md">
-          <div className="w-full h-[700px] relative">
-            <Image
-              src="/veskitehnopark/veski-1.png"
-              alt="ÖÖD Website"
-              fill
-              className="object-contain rounded-xl"
-            />
-          </div>
+      <section className="mt-0 sm:mt-24">
+        <Container className="max-w-[1400px] px-4 sm:px-12 xl:px-0 flex gap-y-6 sm:gap-y-24 flex-col  pt-24 pb-12 mb-12 bg-transparent xl:bg-stone-200  rounded-md">
+          <Image
+            src="/veskitehnopark/veski-1.png"
+            alt="ÖÖD Website"
+            width={1400}
+            height={700}
+            className="rounded-md sm:rounded-xl px-0 sm:px-20"
+          />
 
-          <div className="w-full h-[700px] relative mt-24">
+          <div className="w-full h-auto sm:h-[700px] relative mt-0 sm:mt-24">
             <video className="w-full h-full" autoPlay muted loop>
               <source src="/veskitehnopark/veski-vid.mp4" type="video/mp4" />
             </video>
           </div>
 
-          <div className="w-full h-[700px] relative mt-24">
-            <Image
-              src="/veskitehnopark/veski-3.png"
-              alt="ÖÖD Website"
-              fill
-              className="object-contain rounded-xl"
-            />
-          </div>
+          <Image
+            src="/veskitehnopark/veski-3.png"
+            alt="ÖÖD Website"
+            width={1400}
+            height={700}
+            className="rounded-md sm:rounded-xl px-0 sm:px-20"
+          />
         </Container>
       </section>
     </>

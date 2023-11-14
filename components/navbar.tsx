@@ -1,22 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
+
 import { CVPopover } from "./cv-popover";
-import { Menu } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { useState } from "react";
+
 import { MobileMenu } from "./mobile-menu";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "./ui/navigation-menu";
 
 const routes = [
   {
@@ -39,9 +28,6 @@ const routes = [
 
 export const Navbar = () => {
   const router = useRouter();
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
-
-  const handleMenuOpen = () => {};
 
   return (
     <>

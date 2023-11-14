@@ -6,16 +6,16 @@ const OodhotelsPage = () => {
   return (
     <>
       <section className=" w-full ">
-        <Container className="grid grid-cols-2 mt-[150px] ">
+        <Container className="grid grid-cols-1 mx-8 sm:mx-auto sm:grid-cols-2 mt-[80px] sm:mt-[150px]">
           <div>
             <span className="text-muted-foreground tracking-widest">
               CASE STUDY
             </span>
-            <h1 className="text-5xl font-bold mt-7 w-[80%] mb-12">
+            <h1 className="text-3xl sm:text-5xl font-bold mt-7 w-[80%] mb-8 sm:mb-12">
               ÖÖD-Hotels — Redefining the Art of Accommodation
             </h1>
 
-            <div className="mb-6">
+            <div className="mb-3 sm:mb-6">
               <span className="text-muted-foreground tracking-widest text-sm">
                 SERVICES
               </span>
@@ -24,21 +24,21 @@ const OodhotelsPage = () => {
               </h1>
             </div>
 
-            <div className="mb-6">
+            <div className="mb-3 sm:mb-6">
               <span className="text-muted-foreground tracking-widest text-sm">
                 Development
               </span>
               <h1 className="text-md font-bold mt-2 w-[80%]">Concept</h1>
             </div>
 
-            <div className="mb-6">
+            <div className="mb-3 sm:mb-6">
               <span className="text-muted-foreground tracking-widest text-sm">
                 Year
               </span>
               <h1 className="text-md font-bold mt-2 w-[80%]">2023</h1>
             </div>
 
-            <div className="mb-6 flex flex-col">
+            <div className="mb-3 sm:mb-6 flex flex-col">
               <span className="text-muted-foreground tracking-widest text-sm">
                 Link
               </span>
@@ -62,8 +62,8 @@ const OodhotelsPage = () => {
             </div>
           </div>
 
-          <div className="mt-24 ">
-            <p className="text-stone-500 text-xl mb-6">
+          <div className="mt-12 sm:mt-24 ">
+            <p className="text-stone-500 text-base sm:text-xl mb-6">
               In a world saturated with traditional hotel experiences,
               ÖÖD-Hotels stands out by offering something extraordinary. The
               founders of ÖÖD-Hotels sought a deeper connection with nature, but
@@ -71,7 +71,7 @@ const OodhotelsPage = () => {
               ÖÖD-Hotels, a unique, customized accommodation concept that
               immerses guests in the heart of nature.
             </p>
-            <p className="text-stone-500 text-xl mb-6">
+            <p className="text-stone-500 text-base sm:text-xl mb-6">
               To showcase this groundbreaking concept, I designed a concept
               website. While not used for practical purposes, it encapsulates
               ÖÖD-Hotels&apos; spirit. I used Next.js with React to ensure a
@@ -80,7 +80,7 @@ const OodhotelsPage = () => {
               listings, amenities, and house rules. Cloudinary managed image
               uploads, and Stripe enabled secure payments.
             </p>
-            <p className="text-stone-500 text-xl mb-6">
+            <p className="text-stone-500 text-base sm:text-xl mb-6">
               Behind the scenes, Prisma handled the backend, while Tailwind CSS
               provided elegant styling. Together, we&apos;ve reimagined the
               hotel experience, blending nature&apos;s beauty with cutting-edge
@@ -91,14 +91,14 @@ const OodhotelsPage = () => {
         </Container>
       </section>
 
-      <section className="mt-24">
-        <Container className="max-w-[1400px] px-12 xl:px-0   flex gap-y-24 flex-col  pt-24 pb-12 mb-12 bg-transparent xl:bg-stone-200  rounded-md  ">
+      <section className="mt-0 sm:mt-24">
+        <Container className="max-w-[1400px] px-4 sm:px-12 xl:px-0   flex gap-y-6 sm:gap-y-24 flex-col  pt-24 pb-12 mb-12 bg-transparent xl:bg-stone-200  rounded-md  ">
           <Image
             src="/oodhotels/ood-1.png"
             alt="ÖÖD Website"
             width={1400}
             height={700}
-            className=" rounded-xl px-20"
+            className="rounded-md sm:rounded-xl px-0 sm:px-20"
           />
 
           <Image
@@ -106,7 +106,7 @@ const OodhotelsPage = () => {
             alt="ÖÖD Website"
             width={1400}
             height={700}
-            className=" rounded-xl px-20"
+            className="rounded-md sm:rounded-xl px-0 sm:px-20"
           />
 
           <Image
@@ -114,7 +114,7 @@ const OodhotelsPage = () => {
             alt="ÖÖD Website"
             width={1400}
             height={700}
-            className=" rounded-xl px-20"
+            className="rounded-md sm:rounded-xl px-0 sm:px-20"
           />
 
           <Image
@@ -122,7 +122,7 @@ const OodhotelsPage = () => {
             alt="ÖÖD Website"
             width={1400}
             height={700}
-            className=" rounded-xl px-20"
+            className="rounded-md sm:rounded-xl px-0 sm:px-20"
           />
         </Container>
       </section>

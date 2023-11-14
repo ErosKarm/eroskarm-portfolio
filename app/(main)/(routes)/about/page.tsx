@@ -1,7 +1,13 @@
 import { Container } from "@/components/container";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { ArrowRight, FileInput, MoveRight } from "lucide-react";
+import {
+  ArrowRight,
+  FileInput,
+  Github,
+  Linkedin,
+  MoveRight,
+} from "lucide-react";
 import Image from "next/image";
 import { Technologies } from "../../_components/technologies";
 import Link from "next/link";
@@ -50,19 +56,28 @@ const AboutPage = () => {
               alt="Eros Karm"
               width={160}
               height={160}
-              className="rounded-full flex mt-10 sm:mt-16 grayscale"
+              className="rounded-full flex mt-10 sm:mt-16 grayscale w-[140px] sm:w-[160px]"
             />
 
-            <div className="flex items-center justify-end gap-x-4 mt-20 w-full">
+            <div className="flex items-center justify-end gap-x-auto mt-12 sm:mt-20 w-full">
               <Button size="sm" asChild variant="ghost">
                 <Link
                   href={"https://www.linkedin.com/in/eros-karm-426196234/"}
                   className="text-xs text-muted-foreground"
                 >
-                  Linkedin
+                  <Linkedin className="w-4 h-4" />
                 </Link>
               </Button>
-              <CVPopover />
+
+              <Button size="sm" asChild variant="ghost">
+                <Link
+                  href={"https://www.linkedin.com/in/eros-karm-426196234/"}
+                  className="text-xs text-muted-foreground"
+                >
+                  <Github className="w-4 h-4" />
+                </Link>
+              </Button>
+              <CVPopover className="mr-5 ml-2" />
               <span className="text-xs text-muted-foreground">
                 Or contact me directly{" "}
                 <Link
@@ -74,7 +89,7 @@ const AboutPage = () => {
               </span>
             </div>
             <Separator className="mt-2" />
-            <p className="mt-2 text-sm">
+            <p className="mt-2 text-xs sm:text-sm">
               As a web developer with a strong emphasis on front-end
               development. My journey in web development began at SYSTION OÜ,
               where I specialized in crafting WordPress websites for diverse
@@ -82,19 +97,19 @@ const AboutPage = () => {
               with various reputable brands, assisting them in translating their
               vision into an impactful online presence.
             </p>
-            <p className="mt-8 text-sm">
+            <p className="mt-8 text-xs sm:text-sm">
               Today, my primary focus revolves around creating websites from the
               ground up, primarily leveraging the power of React. I am committed
               to delivering customized, responsive, and user-friendly web
               solutions that meet unique requirements.
             </p>
-            <p className="mt-8 text-sm">
+            <p className="mt-8 text-xs sm:text-sm">
               My proficiency extends to both Estonian and English, allowing me
               to communicate effectively with a broad range of clients. I take
               pride in my exceptional verbal communication skills, which play a
               vital role in understanding and delivering on project objectives.
             </p>
-            <p className="mt-8 text-sm  w-full">
+            <p className="mt-8 text-xs sm:text-sm  w-full">
               In my development journey, I maintain an unwavering dedication to
               achieving my goals and exceeding expectations.
             </p>
@@ -105,26 +120,26 @@ const AboutPage = () => {
       <section className="">
         <Container className="max-w-[850px] px-12 lg:px-0">
           <Separator className="mt-16 mb-4" />
-          <div className="grid grid-cols-4  gap-y-7">
-            <div className="flex flex-col">
+          <div className="grid grid-cols-4 gap-y-7">
+            <div className="flex flex-col col-span-2 ">
               <span className="text-xs font-semibold mb-1">Languages</span>
-              <p className="text-sm">Estonian, English</p>
+              <p className="text-xs sm:text-sm">Estonian, English</p>
             </div>
 
-            <div className="flex flex-col">
+            <div className="flex flex-col col-span-2 ">
               <span className="text-xs font-semibold mb-1">Experience</span>
-              <p className="text-sm">3+ years</p>
+              <p className="text-xs sm:text-sm">3+ years</p>
             </div>
 
-            <div className="flex flex-col">
+            <div className="flex flex-col col-span-2">
               <span className="text-xs font-semibold mb-1">
                 Projects completed
               </span>
-              <p className="text-sm">50+</p>
+              <p className="text-xs sm:text-sm">50+</p>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col col-span-2">
               <span className="text-xs font-semibold mb-1">Education</span>
-              <p className="text-sm">IT Systems Specialist</p>
+              <p className="text-xs sm:text-sm">IT Systems Specialist</p>
               <span className="text-xs text-muted-foreground">
                 EstQF Level 4
               </span>
