@@ -42,7 +42,7 @@ export const Navbar = () => {
           </span>
         </div>
 
-        <div className="hidden lg:flex gap-x-12">
+        <div className="hidden lg:flex items-center gap-x-12">
           {routes.map((route) => (
             <Link
               href={route.href}
@@ -52,7 +52,7 @@ export const Navbar = () => {
               {route.label}
             </Link>
           ))}
-          <CVPopover />
+          <CVPopover className="-ml-2" />
         </div>
         <div className="block lg:hidden">
           <MobileMenu routes={routes} />

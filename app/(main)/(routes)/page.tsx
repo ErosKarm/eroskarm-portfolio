@@ -1,3 +1,5 @@
+"use client";
+
 import { Container } from "@/components/container";
 
 import Link from "next/link";
@@ -10,7 +12,7 @@ export default function Home() {
   return (
     <>
       <section>
-        <Container className="h-full mt-[100px] sm:mt-[150px] relative z-20 px-12 xl:px-0">
+        <Container className="h-full mt-[80px] sm:mt-[150px] relative z-20 px-12 xl:px-0">
           <div className="z-90">
             <h1 className="font-semibold text-4xl text-left">Web Engineer</h1>
             <p className="mt-8 w-full text-left sm:w-[75%] text-base sm:text-xl">

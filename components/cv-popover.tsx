@@ -15,7 +15,10 @@ export const CVPopover = ({ className }: CVPopoverProps) => {
   return (
     <Popover>
       <PopoverTrigger
-        className={cn("text-xs uppercase font-[600] text-black/8", className)}
+        className={cn(
+          "text-xs uppercase font-[600] text-black/8 hover:bg-accent hover:text-accent-foreground p-2 rounded-md",
+          className
+        )}
       >
         CV
       </PopoverTrigger>
