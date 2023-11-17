@@ -5,13 +5,17 @@ export const Projects = () => {
   return (
     <div className="flex flex-col gap-x-8 lg:gap-x-24 lg:grid lg:grid-cols-2">
       <Link href={"/works/oodhotels"} className="">
-        <Image
-          src={"/oodhotles.gif"}
-          alt="ÖÖD Hotels GIF"
-          width={600}
-          height={600}
+        <video
+          width={100}
+          height={100}
+          muted
+          loop
+          autoPlay
           className="rounded-lg w-full"
-        />
+        >
+          <source src="/oodhotels.mp4" type="video/mp4"></source>
+        </video>
+
         <h3 className="text-sm sm:text-xl mt-2 font-semibold">
           ÖÖD Hotels, Estonia
         </h3>

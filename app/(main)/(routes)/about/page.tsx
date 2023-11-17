@@ -121,23 +121,23 @@ const AboutPage = () => {
         <Container className="max-w-[850px] px-12 lg:px-0">
           <Separator className="mt-16 mb-4" />
           <div className="grid grid-cols-4 gap-y-7">
-            <div className="flex flex-col col-span-2 ">
+            <div className="flex flex-col col-span-2  sm:col-span-1">
               <span className="text-xs font-semibold mb-1">Languages</span>
               <p className="text-xs sm:text-sm">Estonian, English</p>
             </div>
 
-            <div className="flex flex-col col-span-2 ">
+            <div className="flex flex-col col-span-2   sm:col-span-1">
               <span className="text-xs font-semibold mb-1">Experience</span>
               <p className="text-xs sm:text-sm">3+ years</p>
             </div>
 
-            <div className="flex flex-col col-span-2">
+            <div className="flex flex-col col-span-2  sm:col-span-1">
               <span className="text-xs font-semibold mb-1">
                 Projects completed
               </span>
               <p className="text-xs sm:text-sm">50+</p>
             </div>
-            <div className="flex flex-col col-span-2">
+            <div className="flex flex-col col-span-2 sm:col-span-1">
               <span className="text-xs font-semibold mb-1">Education</span>
               <p className="text-xs sm:text-sm">IT Systems Specialist</p>
               <span className="text-xs text-muted-foreground">

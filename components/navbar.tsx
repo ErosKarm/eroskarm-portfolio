@@ -31,7 +31,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <div className="flex max-w-[1250px] h-16  items-center mx-auto justify-between pt-4 px-12 xl:px-0">
+      <header className="flex max-w-[1250px] h-16  items-center mx-auto justify-between pt-4 px-12 xl:px-0 ">
         <div
           className="flex gap-x-2"
           role="button"
@@ -42,7 +42,7 @@ export const Navbar = () => {
           </span>
         </div>
 
-        <div className="hidden lg:flex items-center gap-x-12">
+        <nav className="hidden lg:flex items-center gap-x-12">
           {routes.map((route) => (
             <Link
               href={route.href}
@@ -53,11 +53,11 @@ export const Navbar = () => {
             </Link>
           ))}
           <CVPopover className="-ml-2" />
-        </div>
+        </nav>
         <div className="block lg:hidden">
           <MobileMenu routes={routes} />
         </div>
-      </div>
+      </header>
     </>
   );
 };
