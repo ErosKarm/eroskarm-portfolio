@@ -49,7 +49,7 @@ export const CVPopover = ({ className }: CVPopoverProps) => {
             ENG
           </span>
           <Image
-            src="/uk.webp"
+            src="/eng.webp"
             unoptimized
             alt="Estonian Flag"
             width={20}

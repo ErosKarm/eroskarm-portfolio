@@ -43,8 +43,7 @@ export const Brands = () => {
         className="mx-auto grayscale w-[55px] sm:w-[70px]"
       />
       <Image
-        src={"/brands/iriscorp.webp"}
-        unoptimized
+        src={"/brands/iriscorp.svg"}
         alt="Iriscorp logo"
         width={80}
         height={80}
