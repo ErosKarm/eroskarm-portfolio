@@ -3,7 +3,7 @@ import { Container } from "@/components/container";
 const PrivacyPolicy = () => {
   return (
     <section>
-      <Container className="max-w-[1000px] mt-[150px] flex flex-col gap-y-3 pb-24 lg:pb-0 px-10">
+      <Container className="max-w-[1000px] mt-[150px] flex flex-col gap-y-3 pb-24 lg:pb-24 px-10 ">
         <h2 className="text-4xl font-bold mb-6">Privacy Policy</h2>
         <p>
           At eroskarm.com, accessible from eroskarm.com, one of our main

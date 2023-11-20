@@ -84,7 +84,7 @@ const AboutPage = () => {
               </span>
             </div>
             <Separator className="mt-2" />
-            <p className="mt-2 text-xs sm:text-sm">
+            <p className="mt-2 text-xs sm:text-sm text-justify">
               As a web developer with a strong emphasis on front-end
               development. My journey in web development began at SYSTION OÜ,
               where I specialized in crafting WordPress websites for diverse
@@ -92,19 +92,19 @@ const AboutPage = () => {
               with various reputable brands, assisting them in translating their
               vision into an impactful online presence.
             </p>
-            <p className="mt-8 text-xs sm:text-sm">
+            <p className="mt-8 text-xs sm:text-sm text-justify">
               Today, my primary focus revolves around creating websites from the
               ground up, primarily leveraging the power of React. I am committed
               to delivering customized, responsive, and user-friendly web
               solutions that meet unique requirements.
             </p>
-            <p className="mt-8 text-xs sm:text-sm">
+            <p className="mt-8 text-xs sm:text-sm text-justify">
               My proficiency extends to both Estonian and English, allowing me
               to communicate effectively with a broad range of clients. I take
               pride in my exceptional verbal communication skills, which play a
               vital role in understanding and delivering on project objectives.
             </p>
-            <p className="mt-8 text-xs sm:text-sm  w-full">
+            <p className="mt-8 text-xs sm:text-sm  w-full text-justify">
               In my development journey, I maintain an unwavering dedication to
               achieving my goals and exceeding expectations.
             </p>
