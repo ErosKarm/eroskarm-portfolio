@@ -23,7 +23,8 @@ export const Projects = () => {
       <Link href={"/works/veskitehnopark"} className="mt-10 lg:mt-48">
         <Image
           src={"/veskitehnopark.webp"}
-          alt="Veski tehnopark GIF"
+          unoptimized
+          alt="Veski tehnopark"
           width={400}
           height={900}
           className="rounded-lg pt-[-5px] w-full"
@@ -36,6 +37,7 @@ export const Projects = () => {
         <div className="">
           <Image
             src={"/f1.webp"}
+            unoptimized
             alt="Veski tehnopark GIF"
             width={400}
             height={900}

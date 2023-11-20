@@ -21,7 +21,8 @@ const WorksPage = () => {
           >
             <div className="relative h-[330px] sm:h-[500px] w-full">
               <Image
-                src={"/oodhotels.jpg"}
+                src={"/oodhotels.webp"}
+                unoptimized
                 fill
                 alt="Veskitehnopark"
                 className="object-cover rounded-[15px]"
@@ -42,6 +43,7 @@ const WorksPage = () => {
             <div className="relative h-[330px] sm:h-[500px]  w-full">
               <Image
                 src={"/veskitehnopark.webp"}
+                unoptimized
                 fill
                 alt="Veskitehnopark"
                 className="object-cover rounded-[15px]"

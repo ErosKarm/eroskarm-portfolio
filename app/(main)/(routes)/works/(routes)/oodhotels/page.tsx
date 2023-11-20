@@ -94,32 +94,36 @@ const OodhotelsPage = () => {
       <section className="mt-0 sm:mt-24">
         <Container className="max-w-[1400px] px-4 sm:px-12 xl:px-0   flex gap-y-6 sm:gap-y-24 flex-col  pt-24 pb-12 mb-12 bg-transparent xl:bg-stone-200  rounded-md  ">
           <Image
-            src="/oodhotels/ood-1.png"
-            alt="ÖÖD Website"
+            src="/oodhotels/ood-1.webp"
+            unoptimized
+            alt="ÖÖD Website image"
             width={1400}
             height={700}
             className="rounded-md sm:rounded-xl px-0 sm:px-20"
           />
 
           <Image
-            src="/oodhotels/ood-2.png"
-            alt="ÖÖD Website"
+            src="/oodhotels/ood-2.webp"
+            unoptimized
+            alt="ÖÖD Website image"
             width={1400}
             height={700}
             className="rounded-md sm:rounded-xl px-0 sm:px-20"
           />
 
           <Image
-            src="/oodhotels/ood-3.png"
-            alt="ÖÖD Website"
+            src="/oodhotels/ood-3.webp"
+            unoptimized
+            alt="ÖÖD Website image"
             width={1400}
             height={700}
             className="rounded-md sm:rounded-xl px-0 sm:px-20"
           />
 
           <Image
-            src="/oodhotels/ood-4.png"
-            alt="ÖÖD Website"
+            src="/oodhotels/ood-4.webp"
+            unoptimized
+            alt="ÖÖD Website image"
             width={1400}
             height={700}
             className="rounded-md sm:rounded-xl px-0 sm:px-20"

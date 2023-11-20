@@ -1,15 +1,9 @@
 import { Container } from "@/components/container";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import {
-  ArrowRight,
-  FileInput,
-  Github,
-  Linkedin,
-  MoveRight,
-} from "lucide-react";
+import { Github, Linkedin, MoveRight } from "lucide-react";
 import Image from "next/image";
-import { Technologies } from "../../_components/technologies";
+
 import Link from "next/link";
 import { CVPopover } from "@/components/cv-popover";
 import { Brands } from "../../_components/brands";
@@ -52,7 +46,8 @@ const AboutPage = () => {
             </h2>
 
             <Image
-              src="/eroskarm.jpg"
+              src="/eroskarm.webp"
+              unoptimized
               alt="Eros Karm"
               width={160}
               height={160}
