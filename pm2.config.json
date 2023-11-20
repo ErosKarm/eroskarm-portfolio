@@ -1,0 +1,14 @@
+{
+  "apps": [
+    {
+      "name": "eroskarm-portfolio",
+      "script": "npm",
+      "args": "run start",
+      "exec_mode": "cluster",
+      "instances": "max",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
