@@ -4,6 +4,7 @@
       "name": "eroskarm-portfolio",
       "script": "npm",
       "args": "run start",
+      "cwd": "/data01/virt124692/domeenid/www.eroskarm.com/eroskarm-portfolio",
       "exec_mode": "cluster",
       "instances": "max",
       "env": {

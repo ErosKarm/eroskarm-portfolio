@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Container } from "@/components/container";
 
 export const metadata: Metadata = {
-  title: "Eros Karm | Works",
+  title: "Eros Karm | Privacy Policy",
   description:
     "Eros Karm's commitment to privacy and security. Learn about our practices in handling data while delivering exceptional web solutions. Your online experience is our priority.",
 };
