@@ -1,6 +1,13 @@
-import { Container } from "@/components/container";
 import Image from "next/image";
-import Link from "next/link";
+import type { Metadata } from "next";
+
+import { Container } from "@/components/container";
+
+export const metadata: Metadata = {
+  title: "Eros Karm | ÖÖD Hotels",
+  description:
+    "Experience ÖÖD-Hotels, a unique concept blending nature and technology. Explore the groundbreaking website designed by Eros Karm, utilizing Next.js, React, Clerk for authentication, Cloudinary for image management, and Stripe for secure payments. Immerse yourself in the future of hospitality.",
+};
 
 const OodhotelsPage = () => {
   return (

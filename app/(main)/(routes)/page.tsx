@@ -1,12 +1,16 @@
-"use client";
-
-import { Container } from "@/components/container";
-
 import Link from "next/link";
 
 import { Projects } from "../_components/projects";
-
+import { Container } from "@/components/container";
 import { Technologies } from "../_components/technologies";
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Eros Karm | Web Developer",
+  description:
+    "Welcome to the digital world of Eros Karm, a Full-stack Engineer passionate about crafting exceptional online experiences. Explore a portfolio showcasing proficiency in React, Next.js, and innovative web development solutions.",
+};
 
 export default function Home() {
   return (

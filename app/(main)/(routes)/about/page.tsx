@@ -8,6 +8,14 @@ import Link from "next/link";
 import { CVPopover } from "@/components/cv-popover";
 import { Brands } from "../../_components/brands";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Eros Karm | About",
+  description:
+    "Meet Eros Karm, a Full-stack Engineer with a focus on front-end development. Delve into the journey of crafting user-friendly websites and discover the passion that drives the creation of exceptional online experiences.",
+};
+
 const AboutPage = () => {
   return (
     <>
@@ -260,7 +268,7 @@ const AboutPage = () => {
             LOKING FOR A DEVELOPER?
           </span>
           <Link
-            href={"/contact"}
+            href={"mailto:contact@eroskarm.com"}
             className="flex justify-center align-center items-center text-2xl sm:text-5xl lg:text-7xl font-semibold hover:underline"
           >
             Let&apos;s work together{" "}

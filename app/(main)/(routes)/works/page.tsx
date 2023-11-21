@@ -1,14 +1,16 @@
-"use client";
-
-import { Container } from "@/components/container";
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 
-import { useRouter } from "next/navigation";
+import { Container } from "@/components/container";
+
+export const metadata: Metadata = {
+  title: "Eros Karm | Works",
+  description:
+    "Explore Eros Karm's portfolio of web development projects, from WordPress websites to cutting-edge React applications. Dive into a world of customized, responsive, and user-friendly web solutions that redefine online experiences.",
+};
 
 const WorksPage = () => {
-  const router = useRouter();
-
   return (
     <>
       <section className="h-fit">

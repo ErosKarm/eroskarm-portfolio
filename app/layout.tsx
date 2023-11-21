@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-
-import NextTopLoader from "nextjs-toploader";
-
 import localFont from "next/font/local";
+import NextTopLoader from "nextjs-toploader";
 
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
@@ -20,7 +18,10 @@ const Helvetica = localFont({
 
 export const metadata: Metadata = {
   title: "Eros Karm",
-  description: "Eros Karm Personal Website",
+  description: "Eros Karm | Web Developer",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

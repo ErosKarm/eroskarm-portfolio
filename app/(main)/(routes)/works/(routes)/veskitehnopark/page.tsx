@@ -1,7 +1,15 @@
-import { Container } from "@/components/container";
 import Image from "next/image";
+import type { Metadata } from "next";
 
-const OodhotelsPage = () => {
+import { Container } from "@/components/container";
+
+export const metadata: Metadata = {
+  title: "Eros Karm | Veskitehnopark",
+  description:
+    "Discover Veskitehnopark, a smart storage revolution. Explore the concept website crafted by Eros Karm, featuring Next.js, React, Supabase for robust data storage, Tailwind CSS for styling, and ShadcnUI for an engaging user interface. Redefine your perception of storage solutions and convenience.",
+};
+
+const VeskitehnoparkPage = () => {
   return (
     <>
       <section className="w-full">
@@ -120,4 +128,4 @@ const OodhotelsPage = () => {
   );
 };
 
-export default OodhotelsPage;
+export default VeskitehnoparkPage;
