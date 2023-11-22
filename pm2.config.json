@@ -6,10 +6,13 @@
       "args": "run start",
       "cwd": "/data01/virt124692/domeenid/www.eroskarm.com/eroskarm-portfolio",
       "exec_mode": "cluster",
-      "instances": "max",
+      "instances": 1,
       "env": {
         "NODE_ENV": "production"
-      }
+      },
+      "watch": true,
+      "ignore_watch": ["node_modules", ".git", ".next", "logs", "public"],
+      "restart_delay": "5000"
     }
   ]
 }
