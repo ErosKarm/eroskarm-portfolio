@@ -58,7 +58,7 @@ const AboutPage = () => {
               alt="Eros Karm"
               width={200}
               height={200}
-              className="rounded-full flex mt-10 sm:mt-16  w-[140px] sm:w-[200px]"
+              className="rounded-full flex mt-10 sm:mt-16  w-[140px] sm:w-[200px] border-4 border-white"
             />
 
             <div className="flex items-center justify-end gap-x-auto mt-12 sm:mt-20 w-full">
@@ -73,7 +73,7 @@ const AboutPage = () => {
 
               <Button size="sm" asChild variant="ghost">
                 <Link
-                  href={"https://www.linkedin.com/in/eros-karm-426196234/"}
+                  href={"https://github.com/ErosKarm"}
                   className="text-xs text-muted-foreground"
                 >
                   <Github className="w-4 h-4" />
