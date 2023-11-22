@@ -56,9 +56,9 @@ const AboutPage = () => {
               src="/eroskarm.webp"
               unoptimized
               alt="Eros Karm"
-              width={160}
-              height={160}
-              className="rounded-full flex mt-10 sm:mt-16 grayscale w-[140px] sm:w-[160px]"
+              width={200}
+              height={200}
+              className="rounded-full flex mt-10 sm:mt-16  w-[140px] sm:w-[200px]"
             />
 
             <div className="flex items-center justify-end gap-x-auto mt-12 sm:mt-20 w-full">
