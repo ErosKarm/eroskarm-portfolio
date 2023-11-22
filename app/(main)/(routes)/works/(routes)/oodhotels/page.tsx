@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 const OodhotelsPage = () => {
   return (
     <>
-      <section className=" w-full ">
-        <Container className="grid grid-cols-1 mx-8 sm:mx-auto sm:grid-cols-2 mt-[80px] sm:mt-[150px]">
+      <section className="w-full ">
+        <Container className="grid grid-cols-1 mx-8 lg:mx-8 xl:mx-auto md:grid-cols-2 mt-[80px] sm:mt-[150px]">
           <div>
             <span className="text-muted-foreground tracking-widest">
               CASE STUDY
@@ -99,14 +99,14 @@ const OodhotelsPage = () => {
       </section>
 
       <section className="mt-0 sm:mt-24">
-        <Container className="max-w-[1400px] px-4 sm:px-12 xl:px-0   flex gap-y-6 sm:gap-y-24 flex-col  pt-24 pb-12 mb-12 bg-transparent xl:bg-stone-200  rounded-md  ">
+        <Container className="max-w-[1400px] px-4 lg:px-8 xl:px-0 flex gap-y-6 sm:gap-y-24 flex-col  pt-24 pb-12 mb-12 bg-transparent xl:bg-stone-200  rounded-md">
           <Image
             src="/oodhotels/ood-1.webp"
             unoptimized
             alt="ÖÖD Website image"
             width={1400}
             height={700}
-            className="rounded-md sm:rounded-xl px-0 sm:px-20"
+            className="rounded-md sm:rounded-xl px-0 md:px-20"
           />
 
           <Image
@@ -115,7 +115,7 @@ const OodhotelsPage = () => {
             alt="ÖÖD Website image"
             width={1400}
             height={700}
-            className="rounded-md sm:rounded-xl px-0 sm:px-20"
+            className="rounded-md sm:rounded-xl px-0 md:px-20"
           />
 
           <Image
@@ -124,7 +124,7 @@ const OodhotelsPage = () => {
             alt="ÖÖD Website image"
             width={1400}
             height={700}
-            className="rounded-md sm:rounded-xl px-0 sm:px-20"
+            className="rounded-md sm:rounded-xl px-0 md:px-20"
           />
 
           <Image
@@ -133,7 +133,7 @@ const OodhotelsPage = () => {
             alt="ÖÖD Website image"
             width={1400}
             height={700}
-            className="rounded-md sm:rounded-xl px-0 sm:px-20"
+            className="rounded-md sm:rounded-xl px-0 md:px-20"
           />
         </Container>
       </section>

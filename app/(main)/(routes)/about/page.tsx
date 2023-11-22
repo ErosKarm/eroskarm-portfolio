@@ -81,11 +81,11 @@ const AboutPage = () => {
                 </Link>
               </Button>
               <CVPopover className="mr-5 ml-2" />
-              <span className="text-xs text-muted-foreground">
-                Or contact me directly{" "}
+              <span className="flex flex-col sm:flex-row text-xs text-muted-foreground">
+                Or contact me directly
                 <Link
-                  href={"/contact"}
-                  className="font-bold hover:underline text-black"
+                  href={"mailto:contact@eroskarm.com"}
+                  className="font-bold hover:underline text-black ml-0 sm:ml-1"
                 >
                   contact@eroskarm.com
                 </Link>
