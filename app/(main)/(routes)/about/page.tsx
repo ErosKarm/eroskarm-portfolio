@@ -1,14 +1,13 @@
+import Link from "next/link";
+import Image from "next/image";
+import type { Metadata } from "next";
+import { Github, Linkedin, MoveRight } from "lucide-react";
+
 import { Container } from "@/components/container";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Github, Linkedin, MoveRight } from "lucide-react";
-import Image from "next/image";
-
-import Link from "next/link";
 import { CVPopover } from "@/components/cv-popover";
 import { Brands } from "../../_components/brands";
-
-import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Eros Karm | About",
@@ -21,10 +20,10 @@ const AboutPage = () => {
     <>
       <section>
         <Container className="mt-[100px] sm:mt-[150px] lg:mt-[250px] xl:px-0 px-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl  font-semibold">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold">
             Discover
           </h2>
-          <h1 className="text-4xl sm:text-7xl lg:text-8xl  font-semibold">
+          <h1 className="text-4xl sm:text-7xl lg:text-8xl font-semibold">
             More about me.
           </h1>
         </Container>
