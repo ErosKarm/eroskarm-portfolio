@@ -56,9 +56,9 @@ const AboutPage = () => {
               src="/eroskarm.webp"
               unoptimized
               alt="Eros Karm"
-              width={200}
-              height={200}
-              className="rounded-full flex mt-10 sm:mt-16  w-[140px] sm:w-[200px] border-4 border-white"
+              width={170}
+              height={170}
+              className="rounded-full flex mt-10 sm:mt-16  w-[140px] sm:w-[170px] "
             />
 
             <div className="flex items-center justify-end gap-x-auto mt-12 sm:mt-20 w-full">
@@ -188,12 +188,12 @@ const AboutPage = () => {
               <ul className="list-disc text-sm mt-3 flex flex-col gap-2">
                 <li>
                   Created and designed WordPress websites from scratch, turning
-                  clients&apos; visions into functional online platforms.
+                  clients visions into functional online platforms.
                 </li>
                 <li>
                   Acted as the primary point of contact between project managers
                   and clients to facilitate seamless communication and ensure
-                  project alignment with client expectations
+                  project alignment with client expectations.
                 </li>
                 <li>
                   Successfully identified and resolved a wide range of technical
@@ -236,12 +236,12 @@ const AboutPage = () => {
                 </li>
                 <li>
                   Handled cost calculations and prepared invoices for clients
-                  regarding materials and services
+                  regarding materials and services.
                 </li>
                 <li>
                   Kept client software up to date based on their requirements,
                   using industry best practices and offering innovative
-                  solutions as needed
+                  solutions as needed.
                 </li>
                 <li>Provided user support, including remote assistance.</li>
               </ul>
