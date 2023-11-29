@@ -58,6 +58,27 @@ const WorksPage = () => {
               CONCEPT DEVELOPMENT
             </span>
           </Link>
+
+          <Link
+            href={"/works/visiongrid"}
+            className="h-[400px] sm:h-[570px] w-full mt-12"
+          >
+            <div className="relative h-[330px] sm:h-[500px]  w-full">
+              <Image
+                src={"/visiongrid.webp"}
+                unoptimized
+                fill
+                alt="Veskitehnopark"
+                className="object-cover rounded-[15px]"
+              />
+            </div>
+            <h2 className="text-base sm:text-xl font-semibold mt-4">
+              VisionGrid
+            </h2>
+            <span className="uppercase text-[11px] sm:text-xs font-semibold text-black/70">
+              GOOGLE CHROME EXTENSION
+            </span>
+          </Link>
         </Container>
       </section>
     </>
