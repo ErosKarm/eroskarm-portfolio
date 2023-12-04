@@ -1,19 +1,24 @@
 import Image from "next/image";
 import Link from "next/link";
+import VideoPlaceholder from "./videoplaceholder";
 
 export const Projects = () => {
   return (
     <div className="flex flex-col gap-y-12 lg:gap-x-24 lg:grid lg:grid-cols-2">
-      <Link href={"/works/oodhotels"} className="h-[380px] overflow-hidden">
+      <Link
+        href={"/works/oodhotels"}
+        className="h-[380px] overflow-hidden relative"
+      >
         <video
           width={100}
           height={500}
           muted
           loop
           autoPlay
+          placeholder="blur"
           className="rounded-lg w-full object-cover h-[350px]"
         >
-          <source src="/oodhotels.mp4" type="video/mp4"></source>
+          <source src="/oodhotels-vid.mp4" type="video/mp4"></source>
         </video>
 
         <h3 className="text-sm sm:text-xl mt-2 font-semibold">
