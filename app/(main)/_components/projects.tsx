@@ -26,18 +26,18 @@ export const Projects = () => {
       </Link>
 
       <div className="mt-0 lg:mt-48 h-[350px]">
-        <Link href={"/works/veskitehnopark"} className="h-[350px] bg-rose-500">
+        <Link href={"/works/racepulse"} className="h-[350px] ">
           <div className="relative h-full">
             <Image
-              src={"/veskitehnopark.webp"}
+              src={"/f1.webp"}
               unoptimized
-              alt="Veski tehnopark"
+              alt="Image of a F1 car"
               fill
               className="rounded-lg pt-[-5px] w-full object-cover"
             />
           </div>
           <h3 className="text-sm sm:text-xl mt-2 font-semibold">
-            Veskitehnopark
+            Racepulse | F1 Edition
           </h3>
         </Link>
       </div>

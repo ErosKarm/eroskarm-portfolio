@@ -39,6 +39,27 @@ const WorksPage = () => {
           </Link>
 
           <Link
+            href={"/works/racepulse"}
+            className="h-[400px] sm:h-[570px] w-full mt-12"
+          >
+            <div className="relative h-[330px] sm:h-[500px]  w-full">
+              <Image
+                src={"/f1.webp"}
+                unoptimized
+                fill
+                alt="Racepulse | F1 Edition"
+                className="object-cover rounded-[15px]"
+              />
+            </div>
+            <h2 className="text-base sm:text-xl font-semibold mt-4">
+              Racepulse | F1 Edition
+            </h2>
+            <span className="uppercase text-[11px] sm:text-xs font-semibold text-black/70">
+              REALTIME DATA APPLICATION
+            </span>
+          </Link>
+
+          <Link
             href={"/works/veskitehnopark"}
             className="h-[400px] sm:h-[570px] w-full mt-12"
           >
